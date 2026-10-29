@@ -1,0 +1,17 @@
+
+/* Shared header used by both pages */
+.gg-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:70px;padding:0 clamp(16px,4.5vw,70px);border-bottom:1px solid #1a1a1a;position:relative;z-index:30;background:#000;color:#fff}
+.gg-nav-left{display:flex;gap:clamp(14px,2.5vw,35px);align-items:center}
+.gg-nav-left a,.gg-nav-contact{font-size:11px;color:#aaa;text-decoration:none;white-space:nowrap}
+.gg-nav-left a:hover,.gg-nav-contact:hover{color:#fff}
+.gg-brand{font-weight:700;letter-spacing:.23em;font-size:clamp(12px,1.15vw,17px);white-space:nowrap;text-decoration:none;color:#fff}
+.gg-brand span{color:#ff971b}.gg-nav-contact{justify-self:end;display:flex;gap:9px;align-items:center}.gg-nav-contact span{color:#ff971b;font-size:17px}
+@media(max-width:760px){.gg-nav{height:auto;min-height:64px;grid-template-columns:1fr auto;padding:0 14px}.gg-brand{grid-column:1;grid-row:1;font-size:13px}.gg-nav-contact{grid-column:2;grid-row:1}.gg-nav-left{grid-column:1/-1;grid-row:2;justify-content:center;gap:18px;padding:9px 0 11px;border-bottom:1px solid #181818}.gg-nav-left a{font-size:11px}}
+@media(max-width:370px){.gg-nav-left{gap:12px}.gg-nav-left a{font-size:10px}}
+
+/* Shared navigation visual treatment and floating WhatsApp control */
+.gg-nav .gg-nav-left a.current{color:#ff971b!important}
+.gc-wa-float{position:fixed;right:22px;bottom:22px;z-index:9999;display:flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:50%;color:white;background:#25d366;box-shadow:0 8px 25px rgba(0,0,0,.36);border:2px solid rgba(255,255,255,.2);transition:transform .2s ease,box-shadow .2s ease}
+.gc-wa-float:hover,.gc-wa-float:focus-visible{transform:translateY(-3px);box-shadow:0 10px 30px rgba(37,211,102,.34)}
+.gc-wa-float:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:760px){.gc-wa-float{right:15px;bottom:calc(15px + env(safe-area-inset-bottom,0px));height:52px;width:52px}.gc-wa-float svg{width:27px;height:27px}}

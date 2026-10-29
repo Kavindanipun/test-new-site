@@ -1,0 +1,1 @@
+Updated six back cover colour photos (Dark Brown, Orange, Black, Light Gray, Royal Blue, Cherry Purple). Product photo switcher, filters and preview share the six images. Existing original images removed from the site package. Example compatibility only; confirm available phone model and stock before ordering. All other pages and design retained.

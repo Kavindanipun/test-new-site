@@ -1,0 +1,40 @@
+/* Glass & Case - responsive refinements; desktop intentionally unchanged */
+html,body{max-width:100%;overflow-x:clip}
+/* Remove decorative arrow glyph spaces from CTA groups */
+.gg-nav-contact,.premium-gradient-cta,.case-cta,.gc-everyday-cta{gap:0!important}
+@media(max-width:760px){
+ /* Keep shared navbar single divider and avoid ghost divider below it */
+ .gg-nav{margin-bottom:0!important;border-bottom:1px solid #1c1c1c!important}
+ .gg-nav-left{border-bottom:0!important}
+ /* Edge-to-edge hero media only on mobile. Desktop untouched */
+ .hero-wrap{padding:0!important;margin:0!important;max-width:none!important;width:100%!important}
+ .hero-wrap .banner{border-radius:0!important;border-left:0!important;border-right:0!important;width:100%!important;box-shadow:none!important}
+ .hero-wrap .banner-image{width:100%!important;height:100%!important;object-fit:cover!important}
+ .gg-video-hero,.gg-scroll-story,.case-collection,.glass-impact-section{max-width:100vw}
+ .gg-video-hero{border-radius:0!important;margin-inline:0!important;padding-inline:0!important}
+ .gg-video-hero video,.gg-hero-video{object-fit:cover!important}
+ /* Prevent iOS Safari auto zoom on focus and horizontal shifting */
+ input,select,textarea,.glass-search input,#phone-model{font-size:16px!important;max-width:100%!important}
+ .glass-search{width:100%!important;max-width:100%!important;min-width:0!important}
+ .glass-search button{flex-shrink:0!important;transform:none!important}
+ .hero-content{min-width:0!important;max-width:100%!important}
+ .catalog-wrap,.catalog-layout,.products-area{min-width:0!important;max-width:100%!important}
+}
+
+/* Mobile hero proportion fix: keep whole phone visible without a tall panel. */
+@media (max-width:700px){
+  .gg-video-hero > .gg-sticky{
+    height:68svh !important;
+    min-height:380px !important;
+    max-height:610px !important;
+    grid-template-rows:58px auto minmax(0,1fr) !important;
+  }
+  .gg-video-hero .gg-showcase,
+  .gg-video-hero .gg-media{min-height:0!important;overflow:hidden!important;}
+  .gg-video-hero .gg-hero-video{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+  }
+}

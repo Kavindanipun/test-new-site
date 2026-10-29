@@ -1,0 +1,7 @@
+/* Store video background applies to both phone-model landing and model-product views. */
+.hero-wrap .banner{background:#050505}
+.hero-wrap .banner-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;z-index:-2;pointer-events:none}
+/* Retain legibility of headings and search controls on bright video frames. */
+.hero-wrap .shade{background:linear-gradient(180deg,rgba(0,0,0,.34),rgba(0,0,0,.25) 38%,rgba(0,0,0,.60))}
+@media(max-width:760px){.hero-wrap .banner-video{object-position:center center}}
+@media(prefers-reduced-motion:reduce){.hero-wrap .banner-video{visibility:hidden}.hero-wrap .banner{background:#101010 url('assets/store-video-poster.webp') center/cover no-repeat}}
